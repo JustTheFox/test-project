@@ -1,0 +1,19 @@
+.link {
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 1;
+    text-decoration: none;
+    color: $gray-900;
+
+    &:hover,
+    &:visited:hover,
+    &:active,
+    &:visited:active {
+        color: $green;
+    }
+
+    &:disabled,
+    &.disabled {
+        color: $gray-200;
+    }
+}
