@@ -1,0 +1,5 @@
+mixin location(linkTitle, currentCity)
+    a.location(href="", title=linkTitle)
+        include ../icon/icon
+        +icon('mark')
+        span.location__city !{currentCity}

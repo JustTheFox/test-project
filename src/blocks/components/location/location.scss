@@ -1,0 +1,13 @@
+.location {
+    display: flex;
+    align-items: center;
+    padding: 7px 0;
+    text-decoration: none;
+    color: $gray-600;
+
+    &__city {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+    }
+}

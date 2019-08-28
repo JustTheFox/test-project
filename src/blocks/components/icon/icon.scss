@@ -1,0 +1,14 @@
+.icon {
+    @include size(21px);
+    stroke: currentColor;
+
+    & path,
+    & line,
+    & circle {
+        stroke: currentColor;
+    }
+
+    &-mark {
+        margin-right: 7px;
+    }
+}
