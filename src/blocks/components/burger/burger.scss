@@ -1,0 +1,75 @@
+.burger {
+    display: inline-block;
+    padding: 10px;
+    line-height: 0;
+    cursor: pointer;
+    transition: 0.8s;
+
+    &__wrapper {
+        display: inline-block;
+        width: 22px;
+        height: 19px;
+        position: relative;
+        z-index: 1;
+    }
+
+    &:hover &,
+    &:active & {
+        &__line {
+            background: $green;
+        }
+    }
+
+    &.open & {
+        transition: 0.5s ease-in-out;
+        transform: rotate(0deg);
+        position: relative;
+        z-index: 10;
+
+        &__line--first,
+        &__line--third {
+            width: 0;
+            transform: rotate(0deg);
+            transition: 0.25s ease-in-out;
+            position: absolute;
+            top: 7px;
+            left: 50%;
+        }
+
+        &__line--second,
+        &__line--second-for-cross {
+            transform: rotate(-45deg);
+            transition: 0.25s ease-in-out;
+            position: absolute;
+            top: 7px;
+        }
+        &__line--second-for-cross {
+            transform: rotate(45deg);
+        }
+    }
+
+    &__line {
+        height: 3px;
+        border-radius: 50px;
+        background-color: $gray-900;
+        transition: transform 0.4s, width 0.4s, top 0.4s, background-color 1s;
+        position: absolute;
+        left: 0;
+
+        &--first {
+            width: 100%;
+            top: 0px;
+        }
+
+        &--second,
+        &--second-for-cross {
+            width: 100%;
+            top: 8px;
+        }
+
+        &--third {
+            width: 100%;
+            bottom: 0px;
+        }
+    }
+}

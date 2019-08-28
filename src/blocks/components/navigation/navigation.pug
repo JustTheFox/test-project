@@ -1,0 +1,8 @@
+//- Навигация
+
+mixin navigation(data)
+	nav.navigation(role='navigation', class!=attributes.class)
+		ul.navigation__list
+			each item in data.items
+				li.navigation__item
+					a.navigation__link(href=item.href, title=item.title) #{item.text}

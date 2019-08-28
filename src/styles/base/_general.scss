@@ -1,9 +1,15 @@
-html {
-    height: 100%;
-    font-size: 18px;
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
 }
-  
-body { 
+
+html {
+    font-size: 18px;
+    height: 100%;
+}
+
+body {
     height: 100%;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -11,13 +17,23 @@ body {
     font-family: $base-font-family;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 .wrapper {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    -webkit-overflow-scrolling: touch;
+    min-width: 320px;
     height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
-  
-.main { 
+
+.main {
     flex: 1 0 auto;
 }
 

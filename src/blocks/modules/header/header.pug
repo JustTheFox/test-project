@@ -1,1 +1,28 @@
-p kek
+header.header
+    .container
+        .header__inner
+            .header__left
+                include ../../components/burger/burger
+                +burger()
+                //- .header__nav-wrapper
+                //-     include ../../components/navigation/navigation
+                //-     +navigation({'items': [
+                //-         {
+                //-             'href': 'javascript:void(0);',
+                //-             'text': 'Парковка'
+                //-         }, {
+                //-             'href': 'javascript:void(0);',
+                //-             'text': 'Страховка'
+                //-         }, {
+                //-             'href': 'javascript:void(0);',
+                //-             'text': 'Бензин'
+                //-         }, {
+                //-             'href': 'javascript:void(0);',
+                //-             'text': 'Обслуживание'
+                //-         }
+                //-     ]})
+                //- include ../../components/lang-selector/lang-selector
+                //- +lang-selector('Eng', 'Ru')
+            .header__main
+                include ../../components/logo/logo
+                +logo()

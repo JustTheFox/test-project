@@ -1,4 +1,4 @@
 //- Ссылка
 
-mixin link(href, text)
-	a.link(href=href, title=text, class!=attributes.class) #{text}
+mixin link(linkHref, linkTitle, linkText)
+	a.link(href=linkHref, title=linkTitle, class!=attributes.class) #{linkText}

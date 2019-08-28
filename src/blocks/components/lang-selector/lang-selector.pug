@@ -1,0 +1,7 @@
+//- Переключатель языка
+
+mixin lang-selector(...items)
+	ul.lang-selector
+		each item in items
+			li.lang-selector__item
+				a.lang-selector__link(href="javascript:void(0)", title=item) #{item}
