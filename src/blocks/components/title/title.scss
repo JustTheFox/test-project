@@ -1,8 +1,4 @@
 .title {
-    margin: 0 0 11px;
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 1.2;
     color: $gray-900;
 
     & span {
@@ -10,9 +6,36 @@
         color: $green;
     }
 
+    &--h1 {
+        margin: 0 0 11px;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 1.2;
+    }
+
+    &--h2 {
+        margin: 0 0 11px;
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 37px;
+    }
+
+    &--slider {
+        color: #ffffff;
+    }
+
     @media (min-width:768px) {
-        margin-bottom: 24px;
-        font-size: 70px;
-        line-height: 1;
+        &--h1 {
+            margin-bottom: 24px;
+            font-size: 70px;
+            line-height: 1;
+        }
+    }
+
+    @media (min-width:1440px) {
+        &--h2 {
+            font-size: 40px;
+            line-height: 47px;
+        }
     }
 }

@@ -9,6 +9,7 @@ mixin slider(data)
                 li.slider__item(class!="slider__item--" + index)
                     .slider__image
                         img(src="/img/slider/" + index + ".jpg", alt)
-                    +title('h2', item.title)
-                    p !{item.text}
-                    +button('Подробнее')(class!="button--" + index)
+                    .slider__content
+                        +title('h2', item.title).title--h2.title--slider
+                        p.slider__text !{item.text}
+                        +button('Подробнее')(class!="button--" + index)
