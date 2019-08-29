@@ -7,12 +7,30 @@ $gray-200: #EEEEEE;
 $green: #0EC261;
 $green-02: rgba(14, 194, 97, .2);
 
-$text-dark: $gray-600;
-// $texd-light: $gray-200;
-
 // :root {
-//   background: red;
+//     --btn-cl-1: #0EC261;
+//     --btn-cl-2: #039F67;
+
+//     .slider__item--0 {
+//         --btn-cl-1: #13493F;
+//         --btn-cl-2: #0C7B1B;
+//     }
 // }
+
+// @function color($color-name) {
+//     @return var(--color-#{$color-name});
+//   }
+
+// $btn-cl-1: color(btn-cl-1);
+// $btn-cl-2: color(btn-cl-2);
+
+// $btn-cl-1-hover: $btn-cl-1 * 0.9;
+// $btn-cl-2-hover: $btn-cl-2 * 0.9;
+
+// $btn-cl-1-active: $btn-cl-1 * 0.8;
+// $btn-cl-2-active: $btn-cl-2 * 0.8;
+
+$text-dark: $gray-600;
 
 // Font
 $base-font-family: 'Roboto', Arial, sans-serif;
