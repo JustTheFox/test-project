@@ -1,0 +1,37 @@
+.lang-selector {
+    display: inline-block;
+    padding: 10px 6px;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 1;
+    text-decoration: none;
+    color: $green;
+    transition: color .3s ease-in-out;
+
+    &:hover,
+    &:visited:hover,
+    &:active,
+    &:visited:active {
+        color: $gray-200;
+    }
+
+    &--header {
+        display: none;
+    }
+
+    &--nav {
+        position: absolute;
+        bottom: 20px;
+        left: 22px;
+    }
+
+    @media (min-width:768px) {
+        &--header {
+            display: inline-block;
+        }
+
+        &--nav {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,46 @@
+.navigation {
+    margin-bottom: 26px;
+
+    &__list {
+        margin: 0;
+        padding: 0;
+    }
+
+    &__item {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    &__link {
+        display: inline-block;
+        padding: 10px 0 9px;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 1;
+        color: #FFFFFF;
+        transition: color .3s ease-in-out;
+
+        &:hover,
+        &:visited:hover,
+        &:active,
+        &:visited:active {
+            color: $green;
+        }
+    }
+
+    @media (min-width:768px) {
+        margin-bottom: 30px;
+
+        &__link {
+            font-size: 28px;
+        }
+    }
+
+    @media (min-width:1024px) {
+        &__link {
+            font-size: 32px;
+        }
+    }
+}

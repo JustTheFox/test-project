@@ -1,0 +1,14 @@
+//- Слайдер
+
+mixin slider(data)
+    include ../title/title
+    include ../button/button
+    .slider
+        ul.slider__list.js-slider
+            each item, index in data.items
+                li.slider__item(class!="slider__item--" + index)
+                    .slider__image
+                        img(src="/img/slider/" + index + ".jpg", alt)
+                    +title('h2', item.title)
+                    p !{item.text}
+                    +button('Подробнее')(class!="button--" + index)

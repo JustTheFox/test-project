@@ -1,0 +1,18 @@
+.title {
+    margin: 0 0 11px;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.2;
+    color: $gray-900;
+
+    & span {
+        display: block;
+        color: $green;
+    }
+
+    @media (min-width:768px) {
+        margin-bottom: 24px;
+        font-size: 70px;
+        line-height: 1;
+    }
+}

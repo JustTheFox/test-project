@@ -1,6 +1,8 @@
 .button {
     display: inline-block;
-    padding: 5px 15px;
+    width: 100vw;
+    padding: 15px 20px 17px;
+    margin: 10px -13px 0 -13px;
     border: none;
     outline: none;
     background: linear-gradient(90deg, #0EC261 2.61%, #039F67 112.6%);
@@ -9,15 +11,35 @@
     line-height: 1;
     text-align: center;
     color: #fff;
+    transition: background .3s ease-in-out;
 
     &:hover,
-    &:visited:hover,
+    &:visited:hover {
+        background: linear-gradient(90deg, #0B934A 2.61%, #026E47 112.6%);
+    }
+
     &:active,
     &:visited:active {
+        background: linear-gradient(90deg, #076432 2.61%, #013C27 112.6%);
     }
 
     &:disabled,
     &.disabled {
         color: $gray-200;
+    }
+
+    &--main-page {
+        margin-top: 24px;
+    }
+
+    @media (min-width:768px) {
+        width: auto;
+        padding: 15px 59px;
+        margin: 26px 0 0 0;
+        border-radius: 8px;
+
+        &--main-page {
+            margin-top: 46px;
+        }
     }
 }

@@ -5,13 +5,14 @@
     line-height: 0;
     cursor: pointer;
     transition: 0.8s;
+    position: relative;
+    z-index: 101;
 
     &__wrapper {
         display: inline-block;
         width: 22px;
         height: 19px;
         position: relative;
-        z-index: 1;
     }
 
     &:hover &,
@@ -21,11 +22,15 @@
         }
     }
 
-    &.open & {
+    &.active {
+        margin: 6px 0 0 2px;
         transition: 0.5s ease-in-out;
-        transform: rotate(0deg);
-        position: relative;
-        z-index: 10;
+    }
+
+    &.active & {
+        &__line {
+            background: #ffffff;
+        }
 
         &__line--first,
         &__line--third {
@@ -52,7 +57,7 @@
     &__line {
         height: 3px;
         border-radius: 50px;
-        background-color: $gray-900;
+        background: $gray-900;
         transition: transform 0.4s, width 0.4s, top 0.4s, background-color 1s;
         position: absolute;
         left: 0;
@@ -71,6 +76,24 @@
         &--third {
             width: 100%;
             bottom: 0px;
+        }
+    }
+
+    @media (min-width:768px) {
+        margin-left: 0;
+
+        &__wrapper {
+            width: 35px;
+        }
+
+        &__line {
+            background: #ffffff;
+        }
+    }
+
+    @media (min-width:1024px) {
+        &__wrapper {
+            width: 28px;
         }
     }
 }

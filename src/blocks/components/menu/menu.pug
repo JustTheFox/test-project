@@ -1,0 +1,40 @@
+//- Меню
+
+mixin menu()
+    include ../../components/navigation/navigation
+    include ../../components/social/social
+    include ../../components/lang-selector/lang-selector
+
+    .menu
+        .menu__wrapper
+            +navigation({'items': [
+                {
+                    'href': 'javascript:void(0);',
+                    'text': 'Парковка'
+                }, {
+                    'href': 'javascript:void(0);',
+                    'text': 'Страховка'
+                }, {
+                    'href': 'javascript:void(0);',
+                    'text': 'Бензин'
+                }, {
+                    'href': 'javascript:void(0);',
+                    'text': 'Обслуживание'
+                }
+            ]})
+            +social({'items': [
+                {
+                    'href': 'javascript:void(0);',
+                    'title': 'Парковка',
+                    'icon': 'telegram'
+                }, {
+                    'href': 'javascript:void(0);',
+                    'title': 'Страховка',
+                    'icon': 'facebook'
+                }, {
+                    'href': 'javascript:void(0);',
+                    'title': 'Страховка',
+                    'icon': 'instagram'
+                }
+            ]})
+            +lang-selector('Eng').lang-selector--nav

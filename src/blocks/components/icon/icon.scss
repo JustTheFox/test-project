@@ -11,4 +11,10 @@
     &-mark {
         margin-right: 7px;
     }
+
+    &--social {
+        @include size(32px);
+
+        fill: currentColor;
+    }
 }

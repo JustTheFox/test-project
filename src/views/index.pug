@@ -5,6 +5,14 @@ block variables
 	- const pageTitle = "Need for drive"
 
 block content
+	.main__content
+		.container
+			include ../blocks/components/title/title
+			+title('h1', 'Каршеринг')
+				span Need for drive
+			p Поминутная аренда авто твоего города
+			include ../blocks/components/button/button
+			+button('Забронировать').button--main-page
 
 block scripts
 	script(src="../js/main.js")

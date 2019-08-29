@@ -1,0 +1,9 @@
+//- Социальные сети
+
+mixin social(data)
+    .social
+        ul.social__list
+            each item in data.items
+                li.social__item
+                    a.social__link(href=item.href, title=item.title)
+                        +icon(item.icon, 'social')

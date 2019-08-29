@@ -37,9 +37,32 @@ html(lang="ru")
 			if pageDescription
 				meta(name='description' content=pageDescription)
 	body(class=pageClass)
-		.wrapper
+		include ../../blocks/components/slider/slider
+		include ../../blocks/components/menu/menu
+		.page-wrapper
 			include ../../blocks/modules/header/header
 			main.main
 				block content
 			include ../../blocks/modules/footer/footer
+		.slider-wrapper
+			+slider({'items': [
+				{
+					'image': '',
+					'title': 'Бесплатная парковка',
+					'text': 'Оставляйте машину на платных городских парковках и разрешенных местах, не нарушая ПДД, а также в аэропортах.'
+				}, {
+					'image': '',
+					'title': 'Страховка',
+					'text': 'Полная страховка страховка автомобиля'
+				}, {
+					'image': '',
+					'title': 'Бензин',
+					'text': 'Полный бак на любой заправке города за наш счёт'
+				}, {
+					'image': '',
+					'title': 'Обслуживание',
+					'text': 'Автомобиль проходит еженедельное ТО'
+				}
+			]})
+		+menu()
 		block scripts
