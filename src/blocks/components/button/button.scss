@@ -2,7 +2,7 @@
     display: inline-block;
     width: 100vw;
     padding: 15px 20px 17px;
-    margin: 10px -13px 0 -13px;
+    margin: 0 -13px;
     border: none;
     outline: none;
     background: linear-gradient(90deg, #0EC261 2.61%, #039F67 112.6%);
@@ -10,7 +10,9 @@
     font-size: 18px;
     line-height: 1;
     text-align: center;
+    text-decoration: none;
     color: #fff;
+    cursor: pointer;
     transition: background .3s ease-in-out;
 
     &:hover,
@@ -28,18 +30,33 @@
         color: $gray-200;
     }
 
-    &--main-page {
-        margin-top: 24px;
+    .slider__item {
+        border-radius: 4px;
+    }
+
+    .slider__item--0 & {
+        background: linear-gradient(90deg, #13493F 0%, #0C7B1B 100%);
+    }
+
+    .slider__item--1 & {
+        background: linear-gradient(90deg, #132949 0%, #0C7B67 100%);
+    }
+
+    .slider__item--2 & {
+        background: linear-gradient(90deg, #493013 0%, #7B0C3B 100%);
+    }
+
+    .slider__item--3 & {
+        background: linear-gradient(90deg, #281349 0%, #720C7B 100%);
     }
 
     @media (min-width:768px) {
         width: auto;
         padding: 15px 36px;
-        margin: 15px 0 0 0;
+        margin: 0;
         border-radius: 8px;
 
-        &--main-page {
-            margin-top: 46px;
+        .main-page & {
             padding: 15px 59px;
         }
     }

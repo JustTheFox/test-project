@@ -4,12 +4,12 @@ mixin slider(data)
     include ../title/title
     include ../button/button
     .slider
-        ul.slider__list.js-slider
+        .slider__list.js-slider
             each item, index in data.items
-                li.slider__item(class!="slider__item--" + index)
+                .slider__item(class!="slider__item--" + index)
                     .slider__image
                         img(src="/img/slider/" + index + ".jpg", alt)
                     .slider__content
                         +title('h2', item.title).title--h2.title--slider
                         p.slider__text !{item.text}
-                        +button('Подробнее')(class!="button--" + index)
+                        +button('Подробнее', 'javascript:void(0)')

@@ -1,4 +1,9 @@
 //- Кнопка
 
-mixin button(text)
-	button.button(class!=attributes.class) #{text}
+mixin button(content, link)
+    if link
+        a.button( href=link, title )&attributes( attributes ) #{content}
+            block
+    else
+        button.button&attributes( attributes ) #{content}
+            block

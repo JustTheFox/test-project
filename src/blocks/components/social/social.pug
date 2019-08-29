@@ -6,4 +6,4 @@ mixin social(data)
             each item in data.items
                 li.social__item
                     a.social__link(href=item.href, title=item.title)
-                        +icon(item.icon, 'social')
+                        +icon(item.icon)

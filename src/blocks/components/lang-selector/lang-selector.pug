@@ -1,4 +1,4 @@
 //- Переключатель языка
 
 mixin lang-selector(currentLang)
-	a.lang-selector(href="javascript:void(0)", title, class!=attributes.class) #{currentLang}
+	button.lang-selector(type="button", class!=attributes.class) #{currentLang}

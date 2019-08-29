@@ -19,6 +19,13 @@
         padding: 5px 0;
         text-decoration: none;
         font-size: 0;
-        color: transparent;
+        color: #ffffff;
+
+        &:hover,
+        &:visited:hover,
+        &:active,
+        &:visited:active {
+            color: $green;
+        }
     }
 }

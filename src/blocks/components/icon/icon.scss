@@ -1,20 +1,22 @@
 .icon {
     @include size(21px);
-    stroke: currentColor;
+    transition: all .3s ease-in-out;
 
-    & path,
-    & line,
-    & circle {
-        stroke: currentColor;
+    .social & {
+        @include size(32px);
     }
 
-    &-mark {
+    .location & {
         margin-right: 7px;
     }
 
-    &--social {
-        @include size(32px);
+    .arrow & {
+        @include size(10px, 20px);
+    }
 
-        fill: currentColor;
+    @media (min-width:1440px) {
+        .arrow & {
+            @include size(8px, 18px);
+        }
     }
 }

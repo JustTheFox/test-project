@@ -1,41 +1,60 @@
 .title {
     color: $gray-900;
 
-    & span {
-        display: block;
+    @at-root {
+        h1#{&} {
+            margin: 0;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 1.2;
+        }
+
+        h2#{&} {
+            margin: 0 0 10px;
+            font-weight: 500;
+            font-size: 32px;
+            line-height: 37px;
+
+            .main-page & {
+                font-weight: 700;
+            }
+        }
+    }
+
+    &--green {
         color: $green;
     }
 
-    &--h1 {
-        margin: 0 0 11px;
-        font-weight: 700;
-        font-size: 32px;
-        line-height: 1.2;
-    }
-
-    &--h2 {
-        margin: 0 0 11px;
-        font-weight: 500;
-        font-size: 32px;
-        line-height: 37px;
-    }
-
-    &--slider {
+    .slider & {
         color: #ffffff;
     }
 
     @media (min-width:768px) {
-        &--h1 {
-            margin-bottom: 24px;
-            font-size: 70px;
-            line-height: 1;
+        @at-root {
+            h1#{&} {
+                font-size: 70px;
+                line-height: 1;
+            }
+
+            h2#{&} {
+                font-size: 32px;
+                line-height: 37px;
+
+                .main-page & {
+                    margin-bottom: 24px;
+                    font-size: 70px;
+                    line-height: 1;
+                }
+            }
         }
     }
 
     @media (min-width:1440px) {
-        &--h2 {
-            font-size: 40px;
-            line-height: 47px;
+        @at-root {
+            h2#{&} {
+                font-size: 40px;
+                line-height: 47px;
+            }
         }
     }
 }

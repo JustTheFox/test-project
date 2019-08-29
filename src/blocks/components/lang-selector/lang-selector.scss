@@ -1,11 +1,14 @@
 .lang-selector {
     display: inline-block;
     padding: 10px 6px;
+    border: none;
+    background: none;
     font-weight: 500;
     font-size: 13px;
     line-height: 1;
     text-decoration: none;
     color: $green;
+    cursor: pointer;
     transition: color .3s ease-in-out;
 
     &:hover,

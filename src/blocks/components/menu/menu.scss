@@ -17,10 +17,6 @@
         background: $gray-800;
     }
 
-    &.active {
-        display: block;
-    }
-
     @media (min-width:768px) {
         &__wrapper {
             display: flex;

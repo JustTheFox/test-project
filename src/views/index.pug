@@ -5,12 +5,14 @@ block variables
 	- const pageTitle = "Need for drive"
 
 block content
-	.main__content
+	.main-page
 		.container
 			include ../blocks/components/title/title
-			+title('h1', 'Каршеринг').title--h1
-				span Need for drive
-			p Поминутная аренда авто твоего города
+			+title('h1', 'Каршеринг')
+			+title('h2', 'Need for drive').title--green
+			include ../blocks/components/description/description
+			+description()
+				p Поминутная аренда авто твоего города
 			include ../blocks/components/button/button
 			+button('Забронировать').button--main-page
 
