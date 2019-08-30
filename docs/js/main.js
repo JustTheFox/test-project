@@ -207,8 +207,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var $slider = jquery__WEBPACK_IMPORTED_MODULE_0___default()(".js-slider");
-var $prevArrow = "<button href='javascript:void(0);' class='arrow arrow--prev'><svg class=\"icon icon-arrow-left\"><use xlink:href=\"img/sprites/sprite.svg#arrow-left\"/></svg></button>";
-var $nextArrow = "<button href='javascript:void(0);' class='arrow arrow--next'><svg class=\"icon icon-arrow-right\"><use xlink:href=\"img/sprites/sprite.svg#arrow-right\"/></svg></button>";
+var $prevArrow = "<button href=\"javascript:void(0);\" class=\"arrow arrow--prev\"><svg class=\"icon icon-arrow-left\"><use xlink:href=\"img/sprites/sprite.svg#arrow-left\"/></svg></button>";
+var $nextArrow = "<button href=\"javascript:void(0);\" class=\"arrow arrow--next\"><svg class=\"icon icon-arrow-right\"><use xlink:href=\"img/sprites/sprite.svg#arrow-right\"/></svg></button>";
 
 var responsive = function responsive() {
   if (window.innerWidth >= 1024 && !$slider.hasClass("slick-initialized")) {
