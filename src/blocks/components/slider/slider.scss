@@ -103,12 +103,18 @@
 
     @media (min-width:1440px) {
         &__item {
-            justify-content: flex-start;
-            padding: 27vh 99px 15vh;
+            //justify-content: flex-start;
+            padding: 7vh 99px 26vh;
         }
 
         &__text {
             letter-spacing: 1px;
+        }
+    }
+
+    @media (min-height:1000px) {
+        &__item {
+            padding: 14vh 99px 24vh;
         }
     }
 }
