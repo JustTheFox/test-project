@@ -472,6 +472,10 @@ main {
   padding: 16px 0px;
 }
 
+.main-page {
+  width: 100%;
+}
+
 .container {
   width: 100%;
   padding: 0 12px;
@@ -498,6 +502,7 @@ main {
 }
 
 .title {
+  word-break: break-word;
   color: #121212;
 }
 

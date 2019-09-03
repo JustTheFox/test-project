@@ -2,3 +2,9 @@
     width: $a;
     height: $b;
 }
+
+@mixin flex($grow: 0, $shrink: 0, $basis: auto) {
+    flex-grow: $grow;
+    flex-shrink: $shrink;
+    flex-basis: $basis;
+}
