@@ -5,10 +5,10 @@ mixin slider(data)
     include ../button/button
     .slider.js-slider
         each item, index in data.items
-            .slider__item(class!="slider__item--" + index)
+            .slider__item
                 .slider__image
                     img(src="./img/slider/" + index + ".jpg", alt)
                 .slider__content
                     +title('h2', item.title)
                     p.slider__text !{item.text}
-                    +button('Подробнее', 'javascript:void(0)')
+                    +button('Подробнее', 'javascript:void(0)')(class!="button--" + item.buttonModifier)

@@ -5,7 +5,7 @@
     margin: 0 -13px;
     border: none;
     outline: none;
-    background: linear-gradient(90deg, #0EC261 2.61%, #039F67 112.6%);
+    background-image: linear-gradient(90deg, hsl(147.67, 86.54, 40.78) 2.61%, hsl(158.46, 96.3%, 31.76%) 112.6%); //#0EC261 #039F67
     font-weight: 500;
     font-size: 18px;
     line-height: 1;
@@ -13,16 +13,15 @@
     text-decoration: none;
     color: #fff;
     cursor: pointer;
-    transition: background .3s ease-in-out;
+    transition: background-image .15s linear;
 
-    &:hover,
-    &:visited:hover {
-        background: linear-gradient(90deg, #0B934A 2.61%, #026E47 112.6%)!important;
+
+    &:hover {
+        background-image: linear-gradient(90deg, hsl(147.67, 86.54, 31) 2.61%, hsl(158.46, 96.3%, 22%) 112.6%); //#0B934A #026E47
     }
 
-    &:active,
-    &:visited:active {
-        background: linear-gradient(90deg, #076432 2.61%, #013C27 112.6%)!important;
+    &:active {
+        background-image: linear-gradient(90deg, hsl(147.67, 86.54, 21) 2.61%, hsl(158.46, 96.3%, 12%) 112.6%); //#076432 //#013C27
     }
 
     &:disabled,
@@ -30,24 +29,56 @@
         color: $gray-200;
     }
 
+    &--dark-green {
+        background-image: linear-gradient(90deg, hsl(168.89, 58.7%, 18.04%) 0%, hsl(128.11, 82.22%, 26.47%) 100%);
+
+        &:hover {
+            background-image: linear-gradient(90deg, hsl(168.89, 58.7%, 8.04%) 0%, hsl(128.11, 82.22%, 16.47%) 100%);
+        }
+
+        &:active {
+            background-image: linear-gradient(90deg, hsl(168.89, 58.7%, 0%) 0%, hsl(128.11, 82.22%, 6.47%) 100%);
+        }
+    }
+
+    &--blue {
+        background-image: linear-gradient(90deg, hsl(215.56, 58.7%, 18.04%) 0%, hsl(169.19, 82.22%, 26.47%) 100%);
+
+        &:hover {
+            background-image: linear-gradient(90deg, hsl(215.56, 58.7%, 8.04%) 0%, hsl(169.19, 82.22%, 16.47%) 100%);
+        }
+
+        &:active {
+            background-image: linear-gradient(90deg, hsl(215.56, 58.7%, 0%) 0%, hsl(169.19, 82.22%, 6.47%) 100%);
+        }
+    }
+
+    &--red {
+        background-image: linear-gradient(90deg, hsl(32.22, 58.7%, 18.04%) 0%, hsl(334.59, 82.22%, 26.47%) 100%);
+
+        &:hover {
+            background-image: linear-gradient(90deg, hsl(32.22, 58.7%, 8.04%) 0%, hsl(334.59, 82.22%, 16.47%) 100%);
+        }
+
+        &:active {
+            background-image: linear-gradient(90deg, hsl(32.22, 58.7%, 0%) 0%, hsl(334.59, 82.22%, 6.47%) 100%);
+        }
+    }
+
+    &--purple {
+        background-image: linear-gradient(90deg, hsl(263.33, 58.7%, 18.04%) 0%, hsl(295.14, 82.22%, 26.47%) 100%);
+
+        &:hover {
+            background-image: linear-gradient(90deg, hsl(263.33, 58.7%, 8.04%) 0%, hsl(295.14, 82.22%, 16.47%) 100%);
+        }
+
+        &:active {
+            background-image: linear-gradient(90deg, hsl(263.33, 58.7%, 0%) 0%, hsl(295.14, 82.22%, 6.47%) 100%);
+        }
+    }
+
     .slider__item {
         border-radius: 4px;
-    }
-
-    .slider__item--0 & {
-        background: linear-gradient(90deg, #13493F 0%, #0C7B1B 100%);
-    }
-
-    .slider__item--1 & {
-        background: linear-gradient(90deg, #132949 0%, #0C7B67 100%);
-    }
-
-    .slider__item--2 & {
-        background: linear-gradient(90deg, #493013 0%, #7B0C3B 100%);
-    }
-
-    .slider__item--3 & {
-        background: linear-gradient(90deg, #281349 0%, #720C7B 100%);
     }
 
     @media (min-width:768px) {
