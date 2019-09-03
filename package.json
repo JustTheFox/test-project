@@ -38,6 +38,7 @@
         "gulp-favicons": "^2.3.1",
         "gulp-group-css-media-queries": "^1.2.2",
         "gulp-if": "^2.0.2",
+        "gulp-imagemin": "~6.0.0",
         "gulp-plumber": "^1.2.0",
         "gulp-pug": "^4.0.1",
         "gulp-rename": "^1.2.2",
@@ -46,6 +47,11 @@
         "gulp-sourcemaps": "^2.6.4",
         "gulp-svg-sprite": "^1.5.0",
         "gulp-watch": "^5.0.0",
+        "imagemin-giflossy": "^5.1.10",
+        "imagemin-jpeg-recompress": "~6.0.0",
+        "imagemin-mozjpeg": "^8.0.0",
+        "imagemin-pngquant": "~8.0.0",
+        "imagemin-zopfli": "^6.0.0",
         "require-dir": "^1.2.0",
         "stylelint": "^10.0.1",
         "stylelint-order": "^3.0.0",
@@ -56,8 +62,6 @@
     },
     "dependencies": {
         "jquery": "^3.4.1",
-        "slick-carousel": "^1.8.1",
-        "slick-slider": "^1.8.2",
-        "smart-grid": "^2.1.2"
+        "slick-slider": "^1.8.2"
     }
 }

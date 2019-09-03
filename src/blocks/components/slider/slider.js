@@ -1,5 +1,5 @@
 import $ from "jquery";
-import "slick-carousel";
+import "slick-slider";
 
 var $slider = $(".js-slider");
 var $prevArrow = "<button href=\"javascript:void(0);\" class=\"arrow arrow--prev\"><svg class=\"icon icon-arrow-left\"><use xlink:href=\"img/sprites/sprite.svg#arrow-left\"/></svg></button>";
