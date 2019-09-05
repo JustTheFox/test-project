@@ -31,7 +31,7 @@
         }
     }
 
-    @media (min-width:768px) {
+    @media (min-width:$tablet) {
         margin-bottom: 30px;
 
         &__link {
@@ -39,7 +39,7 @@
         }
     }
 
-    @media (min-width:1024px) {
+    @media (min-width:$desktop-min) {
         &__link {
             font-size: 32px;
         }

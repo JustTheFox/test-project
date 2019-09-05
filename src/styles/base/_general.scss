@@ -2,23 +2,26 @@
 *:before,
 *:after {
     box-sizing: border-box;
-    outline: none;
 }
 
 html {
-    font-size: 18px;
+    display: flex;
     min-height: 100%;
-    height: 100%;
+    //height: 100%;
+    font-size: 18px;
+
+    &.overflow {
+        overflow: hidden;
+    }
 }
 
 body {
     display: flex;
-    align-items: flex-start;
+    align-items: stretch;
     justify-content: flex-start;
-    height: 100%;
+    //height: 100%;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    font-smoothing: antialiased;
     font-family: $base-font-family;
 }
 
@@ -27,7 +30,7 @@ p {
     font-weight: 300;
     color: $text-dark;
 
-    @media (min-width:768px) {
+    @media (min-width:$tablet) {
         margin-bottom: 15px;
         font-size: 26px;
         line-height: 30px;
@@ -39,61 +42,56 @@ img {
     height: auto;
 }
 
-.page-wrapper {
-    flex: 0 0 auto;
+.content-wrapper {
+    @include flex(0, 0, auto);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    -webkit-overflow-scrolling: touch;
     min-width: 320px;
     width: 100%;
     height: 100%;
-    overflow-x: hidden;
-    overflow-y: auto;
     position: relative;
 
-    @media (min-width:768px) {
+    @media (min-width:$tablet) {
         padding-left: 86px;
     }
 
-    @media (min-width:1024px) {
+    @media (min-width:$desktop-min) {
         width: 60vw;
         padding-left: 65px;
     }
 
-    @media (min-width:1440px) {
+    @media (min-width:$desktop) {
         width: 52vw;
     }
 }
 
 .slider-wrapper {
-    flex: 0 0 auto;
+    @include flex(0, 0, auto);
     display: none;
     width: 40vw;
     height: 100%;
-    overflow-x: hidden;
-    overflow-y: auto;
 
-    @media (min-width:1024px) {
+    @media (min-width:$desktop-min) {
         display: inline-block;
     }
 
-    @media (min-width:1440px) {
+    @media (min-width:$desktop) {
         width: 48vw;
     }
 }
 
 main {
-    flex: 1 0 auto;
+    @include flex(1, 0, auto);
     padding: 16px 0px;
 
-    @media (min-width:768px) {
+    @media (min-width:$tablet) {
         display: flex;
         align-items: center;
         padding: 8vh 0 14vh;
     }
 
-    @media (min-width:1024px){
+    @media (min-width:$desktop-min){
         padding-bottom: 15vh;
     }
 }
@@ -106,11 +104,11 @@ main {
     width: 100%;
     padding: 0 12px;
 
-    @media (min-width:768px) {
+    @media (min-width:$tablet) {
         padding: 0 32px;
     }
 
-    @media (min-width:1440px) {
+    @media (min-width:$desktop) {
         padding: 0 64px;
     }
 }

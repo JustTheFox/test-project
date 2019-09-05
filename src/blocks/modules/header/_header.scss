@@ -1,5 +1,5 @@
 .header {
-    flex: 0 0 auto;
+    @include flex(0, 0, auto);
     padding: 14px 0;
 
     &__inner {
@@ -14,7 +14,7 @@
         align-items: flex-end;
     }
 
-    @media (min-width:768px) {
+    @media (min-width:$tablet) {
         padding: 32px 0;
 
         &__left {
@@ -40,14 +40,14 @@
         }
     }
 
-    @media (min-width:1024px) {
+    @media (min-width:$desktop-min) {
         &__left {
             width: 65px;
             padding-bottom: 23px;
         }
     }
 
-    @media (min-width:1440px) {
+    @media (min-width:$desktop) {
         &__left {
             padding-top: 32px;
         }

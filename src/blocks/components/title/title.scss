@@ -30,7 +30,7 @@
         color: #ffffff;
     }
 
-    @media (min-width:768px) {
+    @media (min-width:$tablet) {
         @at-root {
             h1#{&} {
                 font-size: 70px;
@@ -50,7 +50,7 @@
         }
     }
 
-    @media (min-width:1440px) {
+    @media (min-width:$desktop) {
         @at-root {
             h2#{&} {
                 font-size: 40px;

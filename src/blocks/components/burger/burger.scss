@@ -80,7 +80,7 @@
         }
     }
 
-    @media (min-width:768px) {
+    @media (min-width:$tablet) {
         margin-left: 0;
 
         &__wrapper {
@@ -92,7 +92,7 @@
         }
     }
 
-    @media (min-width:1024px) {
+    @media (min-width:$desktop-min) {
         &__wrapper {
             width: 28px;
         }

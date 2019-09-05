@@ -5,7 +5,7 @@
         padding-bottom: 24px;
     }
 
-    @media (min-width:768px) {
+    @media (min-width:$tablet) {
         .main-page & {
             padding-bottom: 46px;
         }

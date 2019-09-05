@@ -35,7 +35,7 @@
             color: $gray-200;
         }
 
-        @media (min-width:768px) {
+        @media (min-width:$tablet) {
             color: $gray-900;
 
             &:hover,

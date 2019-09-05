@@ -21,20 +21,20 @@ var responsive = function () {
     }
 };
 
-// var $sliderHeight = $("html").css("height");
-//     console.log($sliderHeight);
-// var itemHeight = function () {
-//     $(".slider__item").height($sliderHeight);
-// };
+// var $sliderHeight = $("body").css("height");
 
-//itemHeight();
+// console.log($sliderHeight);
+
+// var itemHeight = function () {
+//     $(".slider__item").outerHeight($sliderHeight);
+// };
 
 if ($slider.length > 0) {
     responsive();
-    //itemHeight();
+    // itemHeight();
 
     $(window).resize(function () {
         responsive();
-        //itemHeight();
+        // itemHeight();
     });
 }
