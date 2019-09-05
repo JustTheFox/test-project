@@ -11,9 +11,9 @@ $(document).ready(function(){
         $burgerMenu.toggleClass("active");
 
         if (!$burgerMenu.hasClass("active")) {
-            $burgerMenu.fadeOut( "300ms" );
+            $burgerMenu.fadeOut( "250ms" );
         } else {
-            $burgerMenu.fadeIn( "300ms" );
+            $burgerMenu.fadeIn( "250ms" );
         }
     });
     $(this).keydown(function(e) {
@@ -21,7 +21,7 @@ $(document).ready(function(){
             $html.removeClass("overflow");
             $burgerLink.removeClass("active");
             $burgerMenu.removeClass("active");
-            $burgerMenu.fadeOut( "300ms" );
+            $burgerMenu.fadeOut( "250ms" );
         }
     });
 });

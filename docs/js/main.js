@@ -177,9 +177,9 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).ready(function () {
     $burgerMenu.toggleClass("active");
 
     if (!$burgerMenu.hasClass("active")) {
-      $burgerMenu.fadeOut("300ms");
+      $burgerMenu.fadeOut("250ms");
     } else {
-      $burgerMenu.fadeIn("300ms");
+      $burgerMenu.fadeIn("250ms");
     }
   });
   jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).keydown(function (e) {
@@ -187,7 +187,7 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).ready(function () {
       $html.removeClass("overflow");
       $burgerLink.removeClass("active");
       $burgerMenu.removeClass("active");
-      $burgerMenu.fadeOut("300ms");
+      $burgerMenu.fadeOut("250ms");
     }
   });
 });
