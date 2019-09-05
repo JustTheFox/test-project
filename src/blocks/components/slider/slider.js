@@ -14,27 +14,19 @@ var responsive = function () {
             nextArrow: $nextArrow,
             dots: true,
             infinite: false,
-            focusOnSelect: true
+            focusOnSelect: true,
+            speed: 500,
+            fade: true,
         });
     } else if (window.innerWidth <= 1023 && $slider.hasClass("slick-initialized")) {
         $slider.slick("unslick");
     }
 };
 
-// var $sliderHeight = $("body").css("height");
-
-// console.log($sliderHeight);
-
-// var itemHeight = function () {
-//     $(".slider__item").outerHeight($sliderHeight);
-// };
-
 if ($slider.length > 0) {
     responsive();
-    // itemHeight();
 
     $(window).resize(function () {
         responsive();
-        // itemHeight();
     });
 }
