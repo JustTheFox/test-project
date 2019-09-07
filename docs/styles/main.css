@@ -894,6 +894,7 @@ h2.title {
 
 .slider .slick-slide {
   height: 100%;
+  z-index: 0 !important;
 }
 
 .slider .slick-slide > div {

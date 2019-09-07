@@ -74,6 +74,7 @@
 
     & .slick-slide {
         height: 100%;
+        z-index: 0!important;
 
         & > div {
             height: 100%;
