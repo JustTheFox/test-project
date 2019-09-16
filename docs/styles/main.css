@@ -430,6 +430,7 @@ body {
   display: flex;
   align-items: stretch;
   justify-content: flex-start;
+  width: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: "Roboto", Arial, sans-serif;
