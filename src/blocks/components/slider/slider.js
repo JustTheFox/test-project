@@ -14,7 +14,6 @@ var responsive = function () {
             nextArrow: $nextArrow,
             dots: true,
             infinite: false,
-            focusOnSelect: true,
             speed: 500,
             fade: true,
         });
